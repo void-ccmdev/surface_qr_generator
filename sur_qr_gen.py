@@ -7,16 +7,19 @@ from PyQt5.QtWidgets import (QPushButton, QApplication,
                             QLineEdit, QVBoxLayout,
                             QWidget, QLabel)
 
+version = 1.0
+
 class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("SURFACE | QR-GEN")
-        self.setGeometry(500,500,500,500)
+        self.setWindowTitle("SURFACE | QR-GENERATOR  -v" + str(version))
+        self.setGeometry(500, 500, 500, 500)
         self.setWindowIcon(QIcon("logo.png"))
         self.setWindowFlags(Qt.WindowCloseButtonHint)
 
-        self.title_label = QLabel("SURFACE | QR-GEN", self)
+        self.title_label = QLabel("SURFACE | QR", self)
+        self.version_label = QLabel(str(version))
         self.value_entry = QLineEdit(self)
         self.convert_btn = QPushButton("Convert to QR", self)
         self.qr_label = QLabel(self)
