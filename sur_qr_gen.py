@@ -15,7 +15,7 @@ class MainWindow(QWidget):
 
         self.setWindowTitle("SURFACE | QR-GENERATOR  -v" + str(version))
         self.setGeometry(500, 500, 500, 500)
-        self.setWindowIcon(QIcon("logo.png"))
+        self.setWindowIcon(QIcon("icon.ico"))
         self.setWindowFlags(Qt.WindowCloseButtonHint)
 
         self.title_label = QLabel("SURFACE | QR", self)
@@ -23,6 +23,9 @@ class MainWindow(QWidget):
         self.value_entry = QLineEdit(self)
         self.convert_btn = QPushButton("Convert to QR", self)
         self.qr_label = QLabel(self)
+
+        self.pixmap = QPixmap("qrcode.png")
+        self.qr_label.setPixmap(self.pixmap)
 
         self.initUI()
 
@@ -86,7 +89,6 @@ class MainWindow(QWidget):
         self.qr_label.setPixmap(self.pixmap)
 
         print("QR code saved!")
-
 
 if __name__ == "__main__":
     qrapp = QApplication(sys.argv)
