@@ -50,7 +50,7 @@ Its primary purpose is to offer a reliable, accessible, and standalone solution 
 
 **Core Libraries (Inferred):**
 
-![QR Code Generation](https://img.shields.io/badge/QR%20Code%20Library-red?style=for-the-badge) (`segno` Python library or similar)
+![QR Code Generation](https://img.shields.io/badge/SEGNO%20Library-red?style=for-the-badge) (`segno` Python library or similar)
 
 ## 🚀 Quick Start
 
