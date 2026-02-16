@@ -50,7 +50,7 @@ Its primary purpose is to offer a reliable, accessible, and standalone solution 
 
 **Core Libraries (Inferred):**
 
-![QR Code Generation](https://img.shields.io/badge/QR%20Code%20Library-red?style=for-the-badge) (Likely `qrcode` Python library or similar)
+![QR Code Generation](https://img.shields.io/badge/QR%20Code%20Library-red?style=for-the-badge) (`segno` Python library or similar)
 
 ## 🚀 Quick Start
 
@@ -69,9 +69,9 @@ This section guides you through setting up and running the SURFACE QR Generator,
     ```
 
 2.  **Install dependencies**
-    The project uses `pip` for dependency management. Install `PyInstaller` (for building executables) and `qrcode` (for QR code generation).
+    The project uses `pip` for dependency management. Install `PyInstaller` (for building executables) and `segno` (for QR code generation).
     ```bash
-    pip install pyinstaller qrcode
+    pip install pyinstaller segno
     ```
 
 ### Running the Application (For Developers)
