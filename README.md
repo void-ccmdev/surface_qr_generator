@@ -69,9 +69,9 @@ This section guides you through setting up and running the SURFACE QR Generator,
     ```
 
 2.  **Install dependencies**
-    The project uses `pip` for dependency management. Install `PyInstaller` (for building executables) and `segno` (for QR code generation).
+    The project uses `pip` for dependency management. Install `PyInstaller` (for building executables), `segno` (for QR code generation) and `PyQt5` for GUI.
     ```bash
-    pip install pyinstaller segno
+    pip install pyinstaller segno PyQt5
     ```
 
 ### Running the Application (For Developers)
@@ -131,6 +131,7 @@ This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` fi
 -   **Python**: The versatile programming language powering this application.
 -   **PyInstaller**: For packaging Python applications into standalone executables.
 -   **segno** (or similar library): The library enabling robust QR code generation.
+-   **PyQt5**: The library for GUI.
 
 ## 📞 Support & Contact
 
